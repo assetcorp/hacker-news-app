@@ -3,7 +3,6 @@ import { Box, Button, Container, Grid, makeStyles, styled, Tab, Tabs, Typography
 import NewsItem from '../src/components/News/NewsItem'
 import News from '../src/utils/News'
 
-const tabValues = ['TOP']
 const NewsClass = new News()
 const LIMIT = 10
 
@@ -44,6 +43,9 @@ const Home = () => {
   return (
     <Box className={classes.main}>
       <Container maxWidth="lg">
+        <Typography variant="h5" align="center" style={{ marginBottom: theme.spacing( 2 ) }}>
+          Discover much more!
+        </Typography>
         <Tabs
           variant="scrollable"
           scrollButtons="auto"
