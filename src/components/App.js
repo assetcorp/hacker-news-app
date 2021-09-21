@@ -51,7 +51,7 @@ const App = props => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Box display='flex' flexDirection='column' minHeight='100vh'>
-          <Box className={classes.root}>
+          <Box className={classes.main}>
             <Box className={classes.cover}>
               {props.children}
             </Box>
@@ -63,7 +63,7 @@ const App = props => {
 }
 
 const useStyles = makeStyles( () => ( {
-  root: {
+  main: {
     display: 'flex',
     flexGrow: 1,
     flexDirection: 'column',

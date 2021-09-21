@@ -63,10 +63,10 @@ const Header = props => {
     return (
       <Box className={classes.root}>
         <HideOnScroll {...props}>
-          <AppBar className={classes.appBar} color="default">
+          <AppBar className={classes.mainAppBar} color="default">
             <Container maxWidth="lg">
               <Toolbar style={{ paddingLeft: 0, paddingRight: 0, }}>
-                <Typography className={classes.title} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography className={classes.mainTile} variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   News App
                 </Typography>
               </Toolbar>
@@ -93,7 +93,7 @@ const Header = props => {
 const drawerWidth = 240
 
 const useStyles = makeStyles( theme => ( {
-  root: {
+  main: {
     width: '100%',
   },
   loadingBox: {
@@ -103,21 +103,15 @@ const useStyles = makeStyles( theme => ( {
     width: '100%',
     zIndex: 2002,
   },
-  appBar: {
+  mainAppBar: {
     zIndex: theme.zIndex.drawer + 1,
     [theme.breakpoints.up( 'sm' )]: {
-      width: props => ( props.isLoggedIn && props.accountDrawer ) ? `calc(100% - ${drawerWidth}px)` : '100%',
-      marginLeft: props => ( props.isLoggedIn && props.accountDrawer ) ? drawerWidth : 0,
+      width: '100%',
+      marginLeft: 0,
     },
     // backgroundColor: props => props.transparentHeder ? 'transparent' : theme.palette.background.paper,
   },
-  menuButton: {
-    marginRight: theme.spacing( 2 ),
-    [props => theme.breakpoints.up( 'sm' ) && !( props.isLoggedIn && props.accountDrawer )]: {
-      display: 'none',
-    },
-  },
-  title: {
+  mainTitle: {
     marginRight: theme.spacing( 5 ),
   },
 } ) )

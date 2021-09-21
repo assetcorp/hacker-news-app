@@ -2,7 +2,6 @@
 import React from 'react'
 import '../src/app.css'
 // Components
-import App from 'next/app'
 import WebApp from '../src/components/App'
 import MainApp from '../src/components/MainApp'
 import Header from '../src/components/Header'
@@ -26,9 +25,5 @@ const NewsApp = ( { Component, pageProps, router } ) => {
   )
 }
 
-NewsApp.getInitialProps = async ( appContext ) => {
-  const appProps = await App.getInitialProps( appContext )
-  return { ...appProps }
-}
 
 export default NewsApp

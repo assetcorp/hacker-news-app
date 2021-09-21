@@ -42,7 +42,7 @@ const Home = () => {
   }, [tabValue] )
 
   return (
-    <Box className={classes.root}>
+    <Box className={classes.main}>
       <Container maxWidth="lg">
         <Tabs
           variant="scrollable"
@@ -88,7 +88,7 @@ const Home = () => {
 }
 
 const useStyles = makeStyles( theme => ( {
-  root: {
+  main: {
     width: '100%',
     padding: theme.spacing( 5, 0 )
   },

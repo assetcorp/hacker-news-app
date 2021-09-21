@@ -20,7 +20,7 @@ const NewsItem = ( { article } ) => {
         subheader={`By ${article.by}`}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="textSecondary">
           {article.title}
         </Typography>
       </CardContent>
