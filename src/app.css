@@ -1,0 +1,58 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+	scrollbar-base-color: rgba(0, 0, 0, .43);
+	scrollbar-face-color: rgba(0, 0, 0, .43);
+	scrollbar-3dlight-color: rgba(0, 0, 0, .43);
+	scrollbar-highlight-color: rgba(0, 0, 0, .43);
+	scrollbar-track-color: rgba(0, 0, 0, .43);
+	scrollbar-arrow-color: rgba(0, 0, 0, .43);
+	scrollbar-shadow-color: rgba(0, 0, 0, .43);
+	font-family: -apple-system, BlinkMacSystemFont, Bitter, Roboto, "Helvetica Neue", Arial, "sans-serif", "Apple Color Emoji";
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+::selection {
+	background-color: #1769aa;
+	color: #ffffff;
+}
+
+/* Scrollbar width */
+
+::-webkit-scrollbar {
+	width: 3px;
+	height: 7px;
+}
+
+/* Scrollbar Track */
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Scrollbar Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #2196f3;
+	border-radius: 2.5px;
+}
+
+/* Scrollbar Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #1769aa;
+}
+
+#mainPages {
+	height: 100%;
+	min-height: 100%;
+}
