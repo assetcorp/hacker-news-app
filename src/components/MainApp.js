@@ -22,13 +22,13 @@ const useStyles = makeStyles( theme => ( {
     flexDirection: 'column',
     minHeight: `calc(100vh - ${( theme.mixins.toolbar.minHeight + theme.spacing( 1 ) )}px)`,
     width: '100%',
-    marginTop: props => props.showHeader ? theme.spacing( 8 ) : 0,
+    marginTop: theme.spacing( 8 ),
     [theme.breakpoints.up( 'sm' )]: {
-      width: props => ( props.isLoggedIn && props.accountDrawer && props.showDrawer ) ? `calc(100% - ${drawerWidth}px)` : '100%',
-      marginLeft: props => ( props.isLoggedIn && props.accountDrawer && props.showDrawer ) ? drawerWidth : 0,
+      width: '100%',
+      marginLeft: 0,
     },
     [theme.breakpoints.down( 'xs' )]: {
-      marginTop: props => props.showHeader ? theme.spacing( 7 ) : 0,
+      marginTop: theme.spacing( 7 ),
     }
   },
 } ) )
