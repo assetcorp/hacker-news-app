@@ -1,4 +1,4 @@
-
+import fetch from 'isomorphic-unfetch'
 class News {
   constructor() { }
 
