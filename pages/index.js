@@ -1,8 +1,23 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
+import { Box, Container, makeStyles, Typography } from '@material-ui/core'
 
-export default function Home() {
+const Home = () => {
+  const classes = useStyles()
+
   return (
-    <Typography>hELLO</Typography>
+    <Box className={classes.root}>
+      <Container maxWidth="lg">
+
+      </Container>
+    </Box>
   )
 }
+
+const useStyles = makeStyles( theme => ( {
+  root: {
+    width: '100%',
+    height: '100%',
+  },
+} ) )
+
+export default Home
