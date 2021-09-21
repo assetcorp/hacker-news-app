@@ -67,7 +67,7 @@ const Header = props => {
             <Container maxWidth="lg">
               <Toolbar style={{ paddingLeft: 0, paddingRight: 0, }}>
                 <Typography className={classes.mainTile} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  News App
+                  Delali News App
                 </Typography>
               </Toolbar>
             </Container>
